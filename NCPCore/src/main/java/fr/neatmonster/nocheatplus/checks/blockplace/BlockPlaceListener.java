@@ -32,6 +32,7 @@ import org.bukkit.event.entity.ProjectileLaunchEvent;
 import org.bukkit.event.player.PlayerAnimationEvent;
 import org.bukkit.event.player.PlayerInteractEvent;
 import org.bukkit.inventory.ItemStack;
+import org.bukkit.material.MonsterEggs;
 
 import fr.neatmonster.nocheatplus.NCPAPIProvider;
 import fr.neatmonster.nocheatplus.checks.CheckListener;
@@ -382,7 +383,8 @@ public class BlockPlaceListener extends CheckListener {
                 checkBoatsAnywhere(player, event, cc, pData);
             }
         }
-        else if (type == Material.MONSTER_EGG) {
+//        else if (type == Material.MONSTER_EGG) {
+        else if () {
             // Check blockplace.speed.
             if (speed.isEnabled(player, pData) && speed.check(player, cc, pData)) {
                 // If the check was positive, cancel the event.

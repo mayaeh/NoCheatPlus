@@ -65,7 +65,7 @@ public class Against extends Check {
         }
         else if (BlockProperties.isLiquid(againstType)) {
             // TODO: F_PLACE_AGAINST_WATER|LIQUID...
-            if ((placedMat != Material.WATER_LILY 
+            if ((placedMat != Material.LILY_PAD 
                     || !BlockProperties.isLiquid(block.getRelative(BlockFace.DOWN).getType()))  
                     && !pData.hasPermission(Permissions.BLOCKPLACE_AGAINST_LIQUIDS, player)) {
                 violation = true;

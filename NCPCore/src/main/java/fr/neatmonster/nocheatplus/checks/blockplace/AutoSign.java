@@ -59,7 +59,7 @@ public class AutoSign extends Check {
         final BlockPlaceData data = pData.getGenericInstance(BlockPlaceData.class);
         final BlockPlaceConfig cc = pData.getGenericInstance(BlockPlaceConfig.class);
         Material mat = block.getType();
-        if (mat == Material.SIGN_POST || mat == Material.WALL_SIGN) {
+        if (mat == Material.SIGN || mat == Material.WALL_SIGN) {
             mat = Material.SIGN;
         }
         if (data.autoSignPlacedHash != BlockPlaceListener.getBlockPlaceHash(block, mat)){
